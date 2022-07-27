@@ -1,0 +1,597 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Go 语言函数 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="Go 语言变量作用域.html" />
+    
+    
+    <link rel="prev" href="Go 语言循环语句.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Go 语言教程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="Go 语言环境安装.html">
+            
+                <a href="Go 语言环境安装.html">
+            
+                    
+                    Go 语言环境安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="Go 语言结构.html">
+            
+                <a href="Go 语言结构.html">
+            
+                    
+                    Go 语言结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="Go 语言基础语法.html">
+            
+                <a href="Go 语言基础语法.html">
+            
+                    
+                    Go 语言基础语法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="Go 语言数据类型.html">
+            
+                <a href="Go 语言数据类型.html">
+            
+                    
+                    Go 语言数据类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="Go 语言变量.html">
+            
+                <a href="Go 语言变量.html">
+            
+                    
+                    Go 语言变量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="Go 语言常量.html">
+            
+                <a href="Go 语言常量.html">
+            
+                    
+                    Go 语言常量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="Go 语言运算符.html">
+            
+                <a href="Go 语言运算符.html">
+            
+                    
+                    Go 语言运算符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="Go 语言条件语句.html">
+            
+                <a href="Go 语言条件语句.html">
+            
+                    
+                    Go 语言条件语句
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="Go 语言循环语句.html">
+            
+                <a href="Go 语言循环语句.html">
+            
+                    
+                    Go 语言循环语句
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.11" data-path="Go 语言函数.html">
+            
+                <a href="Go 语言函数.html">
+            
+                    
+                    Go 语言函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="Go 语言变量作用域.html">
+            
+                <a href="Go 语言变量作用域.html">
+            
+                    
+                    Go 语言变量作用域
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="Go 语言数组.html">
+            
+                <a href="Go 语言数组.html">
+            
+                    
+                    Go 语言数组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="Go 语言指针.html">
+            
+                <a href="Go 语言指针.html">
+            
+                    
+                    Go 语言指针
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="Go 语言结构体.html">
+            
+                <a href="Go 语言结构体.html">
+            
+                    
+                    Go 语言结构体
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="Go 并发.html">
+            
+                <a href="Go 并发.html">
+            
+                    
+                    Go 并发
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Go 语言函数</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="go-&#x8BED;&#x8A00;&#x51FD;&#x6570;">Go &#x8BED;&#x8A00;&#x51FD;&#x6570;</h1>
+<p>&#x51FD;&#x6570;&#x662F;&#x57FA;&#x672C;&#x7684;&#x4EE3;&#x7801;&#x5757;&#xFF0C;&#x7528;&#x4E8E;&#x6267;&#x884C;&#x4E00;&#x4E2A;&#x4EFB;&#x52A1;&#x3002;</p>
+
+<p>Go &#x8BED;&#x8A00;&#x6700;&#x5C11;&#x6709;&#x4E2A; main() &#x51FD;&#x6570;&#x3002;</p>
+
+<p>&#x4F60;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x51FD;&#x6570;&#x6765;&#x5212;&#x5206;&#x4E0D;&#x540C;&#x529F;&#x80FD;&#xFF0C;&#x903B;&#x8F91;&#x4E0A;&#x6BCF;&#x4E2A;&#x51FD;&#x6570;&#x6267;&#x884C;&#x7684;&#x662F;&#x6307;&#x5B9A;&#x7684;&#x4EFB;&#x52A1;&#x3002;</p>
+
+<p>&#x51FD;&#x6570;&#x58F0;&#x660E;&#x544A;&#x8BC9;&#x4E86;&#x7F16;&#x8BD1;&#x5668;&#x51FD;&#x6570;&#x7684;&#x540D;&#x79F0;&#xFF0C;&#x8FD4;&#x56DE;&#x7C7B;&#x578B;&#xFF0C;&#x548C;&#x53C2;&#x6570;&#x3002;</p>
+
+<p>Go &#x8BED;&#x8A00;&#x6807;&#x51C6;&#x5E93;&#x63D0;&#x4F9B;&#x4E86;&#x591A;&#x79CD;&#x53EF;&#x52A8;&#x7528;&#x7684;&#x5185;&#x7F6E;&#x7684;&#x51FD;&#x6570;&#x3002;&#x4F8B;&#x5982;&#xFF0C;len() &#x51FD;&#x6570;&#x53EF;&#x4EE5;&#x63A5;&#x53D7;&#x4E0D;&#x540C;&#x7C7B;&#x578B;&#x53C2;&#x6570;&#x5E76;&#x8FD4;&#x56DE;&#x8BE5;&#x7C7B;&#x578B;&#x7684;&#x957F;&#x5EA6;&#x3002;&#x5982;&#x679C;&#x6211;&#x4EEC;&#x4F20;&#x5165;&#x7684;&#x662F;&#x5B57;&#x7B26;&#x4E32;&#x5219;&#x8FD4;&#x56DE;&#x5B57;&#x7B26;&#x4E32;&#x7684;&#x957F;&#x5EA6;&#xFF0C;&#x5982;&#x679C;&#x4F20;&#x5165;&#x7684;&#x662F;&#x6570;&#x7EC4;&#xFF0C;&#x5219;&#x8FD4;&#x56DE;&#x6570;&#x7EC4;&#x4E2D;&#x5305;&#x542B;&#x7684;&#x5143;&#x7D20;&#x4E2A;&#x6570;&#x3002;</p>
+
+<hr>
+
+<h2 id="&#x51FD;&#x6570;&#x5B9A;&#x4E49;">&#x51FD;&#x6570;&#x5B9A;&#x4E49;</h2>
+
+<p>Go &#x8BED;&#x8A00;&#x51FD;&#x6570;&#x5B9A;&#x4E49;&#x683C;&#x5F0F;&#x5982;&#x4E0B;&#xFF1A;</p>
+
+<pre class="prettyprint prettyprinted" style=""><span class="pln">func function_name</span><span class="pun">(</span><span class="pln"> </span><span class="pun">[</span><span class="pln">parameter list</span><span class="pun">]</span><span class="pln"> </span><span class="pun">)</span><span class="pln"> </span><span class="pun">[</span><span class="pln">return_types</span><span class="pun">]</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+   </span><span class="pun">&#x51FD;&#x6570;&#x4F53;</span><span class="pln">
+</span><span class="pun">}</span></pre>
+
+<p>&#x51FD;&#x6570;&#x5B9A;&#x4E49;&#x89E3;&#x6790;&#xFF1A;</p>
+
+<ul>
+<li>func&#xFF1A;&#x51FD;&#x6570;&#x7531; func &#x5F00;&#x59CB;&#x58F0;&#x660E;</li>
+<li>function_name&#xFF1A;&#x51FD;&#x6570;&#x540D;&#x79F0;&#xFF0C;&#x53C2;&#x6570;&#x5217;&#x8868;&#x548C;&#x8FD4;&#x56DE;&#x503C;&#x7C7B;&#x578B;&#x6784;&#x6210;&#x4E86;&#x51FD;&#x6570;&#x7B7E;&#x540D;&#x3002;</li>
+<li>parameter list&#xFF1A;&#x53C2;&#x6570;&#x5217;&#x8868;&#xFF0C;&#x53C2;&#x6570;&#x5C31;&#x50CF;&#x4E00;&#x4E2A;&#x5360;&#x4F4D;&#x7B26;&#xFF0C;&#x5F53;&#x51FD;&#x6570;&#x88AB;&#x8C03;&#x7528;&#x65F6;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x5C06;&#x503C;&#x4F20;&#x9012;&#x7ED9;&#x53C2;&#x6570;&#xFF0C;&#x8FD9;&#x4E2A;&#x503C;&#x88AB;&#x79F0;&#x4E3A;&#x5B9E;&#x9645;&#x53C2;&#x6570;&#x3002;&#x53C2;&#x6570;&#x5217;&#x8868;&#x6307;&#x5B9A;&#x7684;&#x662F;&#x53C2;&#x6570;&#x7C7B;&#x578B;&#x3001;&#x987A;&#x5E8F;&#x3001;&#x53CA;&#x53C2;&#x6570;&#x4E2A;&#x6570;&#x3002;&#x53C2;&#x6570;&#x662F;&#x53EF;&#x9009;&#x7684;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#x51FD;&#x6570;&#x4E5F;&#x53EF;&#x4EE5;&#x4E0D;&#x5305;&#x542B;&#x53C2;&#x6570;&#x3002;</li>
+<li>return_types&#xFF1A;&#x8FD4;&#x56DE;&#x7C7B;&#x578B;&#xFF0C;&#x51FD;&#x6570;&#x8FD4;&#x56DE;&#x4E00;&#x5217;&#x503C;&#x3002;return_types &#x662F;&#x8BE5;&#x5217;&#x503C;&#x7684;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x3002;&#x6709;&#x4E9B;&#x529F;&#x80FD;&#x4E0D;&#x9700;&#x8981;&#x8FD4;&#x56DE;&#x503C;&#xFF0C;&#x8FD9;&#x79CD;&#x60C5;&#x51B5;&#x4E0B; return_types &#x4E0D;&#x662F;&#x5FC5;&#x987B;&#x7684;&#x3002;</li>
+<li>&#x51FD;&#x6570;&#x4F53;&#xFF1A;&#x51FD;&#x6570;&#x5B9A;&#x4E49;&#x7684;&#x4EE3;&#x7801;&#x96C6;&#x5408;&#x3002;</li>
+</ul>
+
+
+<h3 id="&#x5B9E;&#x4F8B;">&#x5B9E;&#x4F8B;</h3>
+
+<p>&#x4EE5;&#x4E0B;&#x5B9E;&#x4F8B;&#x4E3A; max() &#x51FD;&#x6570;&#x7684;&#x4EE3;&#x7801;&#xFF0C;&#x8BE5;&#x51FD;&#x6570;&#x4F20;&#x5165;&#x4E24;&#x4E2A;&#x6574;&#x578B;&#x53C2;&#x6570; num1 &#x548C; num2&#xFF0C;&#x5E76;&#x8FD4;&#x56DE;&#x8FD9;&#x4E24;&#x4E2A;&#x53C2;&#x6570;&#x7684;&#x6700;&#x5927;&#x503C;&#xFF1A;</p>
+
+<div class="example"><h2 class="example" id="&#x5B9E;&#x4F8B;">&#x5B9E;&#x4F8B;</h2> <div class="example_code">
+<span style="color: #666666; font-style: italic;">/* &#x51FD;&#x6570;&#x8FD4;&#x56DE;&#x4E24;&#x4E2A;&#x6570;&#x7684;&#x6700;&#x5927;&#x503C; */</span><br>
+<span style="color: #993333;">func</span> max<span style="color: #339933;">(</span>num1<span style="color: #339933;">,</span> num2 <span style="color: #993333;">int</span><span style="color: #339933;">)</span> <span style="color: #993333;">int</span> <span style="color: #339933;">{</span><br>
+&#xA0; &#xA0;<span style="color: #666666; font-style: italic;">/* &#x58F0;&#x660E;&#x5C40;&#x90E8;&#x53D8;&#x91CF; */</span><br>
+&#xA0; &#xA0;<span style="color: #b1b100; font-weight: bold;">var</span> result <span style="color: #993333;">int</span><br>
+<br>
+&#xA0; &#xA0;<span style="color: #b1b100; font-weight: bold;">if</span> <span style="color: #339933;">(</span>num1 &gt; num2<span style="color: #339933;">)</span> <span style="color: #339933;">{</span><br>
+&#xA0; &#xA0; &#xA0; result <span style="color: #339933;">=</span> num1<br>
+&#xA0; &#xA0;<span style="color: #339933;">}</span> <span style="color: #b1b100; font-weight: bold;">else</span> <span style="color: #339933;">{</span><br>
+&#xA0; &#xA0; &#xA0; result <span style="color: #339933;">=</span> num2<br>
+&#xA0; &#xA0;<span style="color: #339933;">}</span><br>
+&#xA0; &#xA0;<span style="color: #b1b100; font-weight: bold;">return</span> result <br>
+<span style="color: #339933;">}</span><br>
+</div></div>
+
+<h2 id="&#x51FD;&#x6570;&#x8C03;&#x7528;">&#x51FD;&#x6570;&#x8C03;&#x7528;</h2>
+
+<p>&#x5F53;&#x521B;&#x5EFA;&#x51FD;&#x6570;&#x65F6;&#xFF0C;&#x4F60;&#x5B9A;&#x4E49;&#x4E86;&#x51FD;&#x6570;&#x9700;&#x8981;&#x505A;&#x4EC0;&#x4E48;&#xFF0C;&#x901A;&#x8FC7;&#x8C03;&#x7528;&#x8BE5;&#x51FD;&#x6570;&#x6765;&#x6267;&#x884C;&#x6307;&#x5B9A;&#x4EFB;&#x52A1;&#x3002;</p>
+
+<p>&#x8C03;&#x7528;&#x51FD;&#x6570;&#xFF0C;&#x5411;&#x51FD;&#x6570;&#x4F20;&#x9012;&#x53C2;&#x6570;&#xFF0C;&#x5E76;&#x8FD4;&#x56DE;&#x503C;&#xFF0C;&#x4F8B;&#x5982;&#xFF1A;</p>
+
+<div class="example"><h2 class="example" id="&#x5B9E;&#x4F8B;">&#x5B9E;&#x4F8B;</h2> <div class="example_code">
+<span style="color: #b1b100; font-weight: bold;">package</span> main<br>
+<br>
+<span style="color: #b1b100; font-weight: bold;">import</span> <span style="color: #cc66cc;">&quot;fmt&quot;</span><br>
+<br>
+<span style="color: #993333;">func</span> main<span style="color: #339933;">()</span> <span style="color: #339933;">{</span><br>
+&#xA0; &#xA0;<span style="color: #666666; font-style: italic;">/* &#x5B9A;&#x4E49;&#x5C40;&#x90E8;&#x53D8;&#x91CF; */</span><br>
+&#xA0; &#xA0;<span style="color: #b1b100; font-weight: bold;">var</span> a <span style="color: #993333;">int</span> <span style="color: #339933;">=</span> <span style="color: #cc66cc;">100</span><br>
+&#xA0; &#xA0;<span style="color: #b1b100; font-weight: bold;">var</span> b <span style="color: #993333;">int</span> <span style="color: #339933;">=</span> <span style="color: #cc66cc;">200</span><br>
+&#xA0; &#xA0;<span style="color: #b1b100; font-weight: bold;">var</span> ret <span style="color: #993333;">int</span><br>
+<br>
+&#xA0; &#xA0;<span style="color: #666666; font-style: italic;">/* &#x8C03;&#x7528;&#x51FD;&#x6570;&#x5E76;&#x8FD4;&#x56DE;&#x6700;&#x5927;&#x503C; */</span><br>
+&#xA0; &#xA0;ret <span style="color: #339933;">=</span> max<span style="color: #339933;">(</span>a<span style="color: #339933;">,</span> b<span style="color: #339933;">)</span><br>
+<br>
+&#xA0; &#xA0;fmt<span style="color: #339933;">.</span><span style="">Printf</span><span style="color: #339933;">(</span> <span style="color: #cc66cc;">&quot;&#x6700;&#x5927;&#x503C;&#x662F; : %d<span style="color: #000099; font-weight: bold;">\n</span>&quot;</span><span style="color: #339933;">,</span> ret <span style="color: #339933;">)</span><br>
+<span style="color: #339933;">}</span><br>
+<br>
+<span style="color: #666666; font-style: italic;">/* &#x51FD;&#x6570;&#x8FD4;&#x56DE;&#x4E24;&#x4E2A;&#x6570;&#x7684;&#x6700;&#x5927;&#x503C; */</span><br>
+<span style="color: #993333;">func</span> max<span style="color: #339933;">(</span>num1<span style="color: #339933;">,</span> num2 <span style="color: #993333;">int</span><span style="color: #339933;">)</span> <span style="color: #993333;">int</span> <span style="color: #339933;">{</span><br>
+&#xA0; &#xA0;<span style="color: #666666; font-style: italic;">/* &#x5B9A;&#x4E49;&#x5C40;&#x90E8;&#x53D8;&#x91CF; */</span><br>
+&#xA0; &#xA0;<span style="color: #b1b100; font-weight: bold;">var</span> result <span style="color: #993333;">int</span><br>
+<br>
+&#xA0; &#xA0;<span style="color: #b1b100; font-weight: bold;">if</span> <span style="color: #339933;">(</span>num1 &gt; num2<span style="color: #339933;">)</span> <span style="color: #339933;">{</span><br>
+&#xA0; &#xA0; &#xA0; result <span style="color: #339933;">=</span> num1<br>
+&#xA0; &#xA0;<span style="color: #339933;">}</span> <span style="color: #b1b100; font-weight: bold;">else</span> <span style="color: #339933;">{</span><br>
+&#xA0; &#xA0; &#xA0; result <span style="color: #339933;">=</span> num2<br>
+&#xA0; &#xA0;<span style="color: #339933;">}</span><br>
+&#xA0; &#xA0;<span style="color: #b1b100; font-weight: bold;">return</span> result <br>
+<span style="color: #339933;">}</span><br>
+</div></div>
+
+<p>&#x4EE5;&#x4E0A;&#x5B9E;&#x4F8B;&#x5728; main() &#x51FD;&#x6570;&#x4E2D;&#x8C03;&#x7528; max&#xFF08;&#xFF09;&#x51FD;&#x6570;&#xFF0C;&#x6267;&#x884C;&#x7ED3;&#x679C;&#x4E3A;&#xFF1A;</p>
+
+<p><pre class="prettyprint prettyprinted" style=""><span class="pun">&#x6700;&#x5927;&#x503C;&#x662F;</span><span class="pln"> </span><span class="pun">:</span><span class="pln"> </span><span class="lit">200</span></pre></p>
+<p><hr></p>
+<h2 id="&#x51FD;&#x6570;&#x8FD4;&#x56DE;&#x591A;&#x4E2A;&#x503C;">&#x51FD;&#x6570;&#x8FD4;&#x56DE;&#x591A;&#x4E2A;&#x503C;</h2>
+
+<p>Go &#x51FD;&#x6570;&#x53EF;&#x4EE5;&#x8FD4;&#x56DE;&#x591A;&#x4E2A;&#x503C;&#xFF0C;&#x4F8B;&#x5982;&#xFF1A;</p>
+
+<div class="example"><h2 class="example" id="&#x5B9E;&#x4F8B;">&#x5B9E;&#x4F8B;</h2> <div class="example_code">
+<span style="color: #b1b100; font-weight: bold;">package</span> main<br>
+<br>
+<span style="color: #b1b100; font-weight: bold;">import</span> <span style="color: #cc66cc;">&quot;fmt&quot;</span><br>
+<br>
+<span style="color: #993333;">func</span> swap<span style="color: #339933;">(</span>x<span style="color: #339933;">,</span> y <span style="color: #993333;">string</span><span style="color: #339933;">)</span> <span style="color: #339933;">(</span><span style="color: #993333;">string</span><span style="color: #339933;">,</span> <span style="color: #993333;">string</span><span style="color: #339933;">)</span> <span style="color: #339933;">{</span><br>
+&#xA0; &#xA0;<span style="color: #b1b100; font-weight: bold;">return</span> y<span style="color: #339933;">,</span> x<br>
+<span style="color: #339933;">}</span><br>
+<br>
+<span style="color: #993333;">func</span> main<span style="color: #339933;">()</span> <span style="color: #339933;">{</span><br>
+&#xA0; &#xA0;a<span style="color: #339933;">,</span> b <span style="color: #339933;">:=</span> swap<span style="color: #339933;">(</span><span style="color: #cc66cc;">&quot;Google&quot;</span><span style="color: #339933;">,</span> <span style="color: #cc66cc;">&quot;Runoob&quot;</span><span style="color: #339933;">)</span><br>
+&#xA0; &#xA0;fmt<span style="color: #339933;">.</span><span style="">Println</span><span style="color: #339933;">(</span>a<span style="color: #339933;">,</span> b<span style="color: #339933;">)</span><br>
+<span style="color: #339933;">}</span><br>
+</div></div>
+
+<p>&#x4EE5;&#x4E0A;&#x5B9E;&#x4F8B;&#x6267;&#x884C;&#x7ED3;&#x679C;&#x4E3A;&#xFF1A;</p>
+
+<p><pre class="prettyprint prettyprinted" style=""><span class="typ">Runoob</span><span class="pln"> </span><span class="typ">Google</span></pre></p>
+<p><hr></p>
+<h2 id="&#x51FD;&#x6570;&#x53C2;&#x6570;">&#x51FD;&#x6570;&#x53C2;&#x6570;</h2>
+
+<p>&#x51FD;&#x6570;&#x5982;&#x679C;&#x4F7F;&#x7528;&#x53C2;&#x6570;&#xFF0C;&#x8BE5;&#x53D8;&#x91CF;&#x53EF;&#x79F0;&#x4E3A;&#x51FD;&#x6570;&#x7684;&#x5F62;&#x53C2;&#x3002;</p>
+
+<p>&#x5F62;&#x53C2;&#x5C31;&#x50CF;&#x5B9A;&#x4E49;&#x5728;&#x51FD;&#x6570;&#x4F53;&#x5185;&#x7684;&#x5C40;&#x90E8;&#x53D8;&#x91CF;&#x3002;</p>
+
+<p>&#x8C03;&#x7528;&#x51FD;&#x6570;&#xFF0C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x4E24;&#x79CD;&#x65B9;&#x5F0F;&#x6765;&#x4F20;&#x9012;&#x53C2;&#x6570;&#xFF1A;</p>
+
+<table class="reference">
+<thead>
+<tr>
+<th>&#x4F20;&#x9012;&#x7C7B;&#x578B;   </th>
+<th> &#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="go-function-call-by-value.html">&#x503C;&#x4F20;&#x9012;</a> </td>
+<td>&#x503C;&#x4F20;&#x9012;&#x662F;&#x6307;&#x5728;&#x8C03;&#x7528;&#x51FD;&#x6570;&#x65F6;&#x5C06;&#x5B9E;&#x9645;&#x53C2;&#x6570;&#x590D;&#x5236;&#x4E00;&#x4EFD;&#x4F20;&#x9012;&#x5230;&#x51FD;&#x6570;&#x4E2D;&#xFF0C;&#x8FD9;&#x6837;&#x5728;&#x51FD;&#x6570;&#x4E2D;&#x5982;&#x679C;&#x5BF9;&#x53C2;&#x6570;&#x8FDB;&#x884C;&#x4FEE;&#x6539;&#xFF0C;&#x5C06;&#x4E0D;&#x4F1A;&#x5F71;&#x54CD;&#x5230;&#x5B9E;&#x9645;&#x53C2;&#x6570;&#x3002;</td>
+</tr>
+<tr>
+<td><a href="go-function-call-by-reference.html">&#x5F15;&#x7528;&#x4F20;&#x9012;</a></td>
+<td>&#x5F15;&#x7528;&#x4F20;&#x9012;&#x662F;&#x6307;&#x5728;&#x8C03;&#x7528;&#x51FD;&#x6570;&#x65F6;&#x5C06;&#x5B9E;&#x9645;&#x53C2;&#x6570;&#x7684;&#x5730;&#x5740;&#x4F20;&#x9012;&#x5230;&#x51FD;&#x6570;&#x4E2D;&#xFF0C;&#x90A3;&#x4E48;&#x5728;&#x51FD;&#x6570;&#x4E2D;&#x5BF9;&#x53C2;&#x6570;&#x6240;&#x8FDB;&#x884C;&#x7684;&#x4FEE;&#x6539;&#xFF0C;&#x5C06;&#x5F71;&#x54CD;&#x5230;&#x5B9E;&#x9645;&#x53C2;&#x6570;&#x3002;</td>
+</tr>
+</tbody>
+</table>
+
+
+<p></p><p>&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;Go &#x8BED;&#x8A00;&#x4F7F;&#x7528;&#x7684;&#x662F;&#x503C;&#x4F20;&#x9012;&#xFF0C;&#x5373;&#x5728;&#x8C03;&#x7528;&#x8FC7;&#x7A0B;&#x4E2D;&#x4E0D;&#x4F1A;&#x5F71;&#x54CD;&#x5230;&#x5B9E;&#x9645;&#x53C2;&#x6570;&#x3002;</p><p></p>
+<p><hr></p>
+<h2 id="&#x51FD;&#x6570;&#x7528;&#x6CD5;">&#x51FD;&#x6570;&#x7528;&#x6CD5;</h2>
+
+<table class="reference">
+<thead>
+<tr>
+<th>&#x51FD;&#x6570;&#x7528;&#x6CD5; </th>
+<th> &#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="go-function-as-values.html">&#x51FD;&#x6570;&#x4F5C;&#x4E3A;&#x53E6;&#x5916;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#x7684;&#x5B9E;&#x53C2;</a></td>
+<td> &#x51FD;&#x6570;&#x5B9A;&#x4E49;&#x540E;&#x53EF;&#x4F5C;&#x4E3A;&#x53E6;&#x5916;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#x7684;&#x5B9E;&#x53C2;&#x6570;&#x4F20;&#x5165;</td>
+</tr>
+<tr>
+<td><a href="go-function-closures.html">&#x95ED;&#x5305;</a></td>
+<td> &#x95ED;&#x5305;&#x662F;&#x533F;&#x540D;&#x51FD;&#x6570;&#xFF0C;&#x53EF;&#x5728;&#x52A8;&#x6001;&#x7F16;&#x7A0B;&#x4E2D;&#x4F7F;&#x7528;</td>
+</tr>
+<tr>
+<td><a href="go-method.html">&#x65B9;&#x6CD5;</a> </td>
+<td> &#x65B9;&#x6CD5;&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x5305;&#x542B;&#x4E86;&#x63A5;&#x53D7;&#x8005;&#x7684;&#x51FD;&#x6570;</td>
+</tr>
+</tbody>
+</table>    
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="Go 语言循环语句.html" class="navigation navigation-prev " aria-label="Previous page: Go 语言循环语句">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="Go 语言变量作用域.html" class="navigation navigation-next " aria-label="Next page: Go 语言变量作用域">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Go 语言函数","level":"1.11","depth":1,"next":{"title":"Go 语言变量作用域","level":"1.12","depth":1,"path":"Go 语言变量作用域.md","ref":"Go 语言变量作用域.md","articles":[]},"previous":{"title":"Go 语言循环语句","level":"1.10","depth":1,"path":"Go 语言循环语句.md","ref":"Go 语言循环语句.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Go 语言函数.md","mtime":"2022-07-27T12:49:25.566Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-07-27T13:01:59.379Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
