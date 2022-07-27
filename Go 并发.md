@@ -1,6 +1,9 @@
 # Go 并发
 <p>Go 语言支持并发，我们只需要通过 go 关键字来开启 goroutine 即可。</p>
-<p>goroutine 是轻量级线程，goroutine 的调度是由 Golang 运行时进行管理的。</p>
+<p>goroutine 是jjjjjjjjjjjjjjjjjjj
+	
+	
+	轻量级线程，goroutine 的调度是由 Golang 运行时进行管理的。</p>
 
 
 <p>goroutine 语法格式：</p>
